@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        I'm a Login Page
+    </title>
+
+    <link
+    rel="stylesheet"
+    href="bootstrap.css">
+
+</head>
+
+<!-- Most, if not all borders, are for comparative/coding purposes, such as seeing flexbox containers -->
+<body class="border border-primary bg-dark text-light">
+    <nav class="border border-secondary bg-dark navbar-dark navbar-expand-lg navbar-nav  "> <!-- Navbar -->
+        <a class="navbar-brand" href="FrontPageExample.html">
+            Apocalypse RPG
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        News
+                    </a>
+                </li>
+
+                <li class="dropdown nav-item">
+                    <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                        Factions
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">
+                            Rangers
+                        </a>
+
+                        <a class="dropdown-item" href="#">
+                            Faction 2
+                        </a>
+
+                        <a class="dropdown-item" href="#">
+                            Wind Riders
+                        </a>
+                        
+                        <a class="dropdown-item" href="#">
+                            Faction 4
+                        </a>
+
+                        <a class="dropdown-item" href="FrontPageExample.html#xipetotecPreview">
+                            Xipetotec
+                        </a>
+
+                        <a class="dropdown-item" href="#">
+                            Faction 6
+                        </a>
+
+                        <a class="dropdown-item" href="#">
+                            Faction 7
+                        </a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Classes
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Roadmap
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <form class="container border border-success">
+        <div class="form-group">
+            <label for="inputEmailBox">
+                Username/E-mail
+            </label>
+            
+            <input type="email" class="form-control" id="inputEmail"
+            aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">
+                This is an example login page
+            </small>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPasswordBox">
+                Password
+            </label>
+
+            <input type="password" class="form-control" id="inputPassword">
+        </div>
+
+        <div class="form-check form-group">
+            <input type="checkbox" class="form-check-input" id="keepCredentials">
+            <label class="form-check-label" for="keepCredentials1">
+                Keep Me Logged In
+            </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">
+            Log In
+        </button>
+    </form>
+    
+    <div id="factionsSlideshow" class="border border-danger carousel slide"
+    data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#factionsSlideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#factionsSlideshow" data-slide-to="1"></li>
+            <li data-target="#factionsSlideshow" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="active carousel-item"> <!-- Image from F4NV Ranger Armor Mod for Fallout 4-->
+                <img
+                src="https://staticdelivery.nexusmods.com/mods/1151/images/40136/40136-1569924476-741655969.png"
+                class="d-block carousel-item-fixed mx-auto" alt="Responsive image">
+
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Rangers</h5>
+                    <p>Volunteer militia, armed by private investors and diplomatic interests from other factions</p>
+                </div>
+            </div>
+                        
+            <div class="carousel-item"> <!-- Image from Guns of Icarus Online-->
+                <img
+                src="https://www.macgamestore.com/images_screenshots/goio-21811.jpg"
+                class="d-block carousel-item-fixed mx-auto" alt="Responsive image">
+
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Wind Riders</h5>
+                    <p class="text-light">Scavengers that harness wind to power their mobile bases</p>
+                </div>
+            </div>
+
+            <div class="carousel-item"> <!-- Flayed One from Warhammer 40k -->
+                <img
+                src="https://vignette.wikia.nocookie.net/warhammer40k/images/6/65/Flayed_One.jpg/revision/latest?cb=20110929042109"
+                class="d-block carousel-item-fixed mx-auto" alt="Responsive image">
+
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Xipetotec</h5>
+                    <p class="text-light">Tribal nomads that feast on the fallen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>
