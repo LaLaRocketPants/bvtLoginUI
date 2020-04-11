@@ -1,5 +1,5 @@
-A non-functional proof-of-concept login ui for bvtClass.
+A website that contains details about a game a friend and I are planning to make later on. Development is not underway, as we are still building the lore and background of the game.
 
-Bootstrap Library is used
+While it may not be optimal, I have added a style.css file. Type in any css you want in there.
 
-Images do not belong to me. They're just placeholders until actual art shows up.
+I also suggest making a new style.css under your name to make it easier to compare layouts.
