@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        I'm a Login Page
+        Login
     </title>
 
     <link
@@ -19,10 +19,10 @@
 </head>
 
 <!-- Most, if not all borders, are for comparative/coding purposes, such as seeing flexbox containers -->
-<body class="border border-primary bg-dark text-light">
-    <nav class="border border-secondary bg-dark navbar navbar-dark navbar-expand-lg"> <!-- Navbar -->
+<body class="bg-dark text-light">
+    <nav class="bg-dark navbar navbar-dark navbar-expand-lg"> <!-- Navbar -->
         <a class="navbar-brand" href="FrontPage.html">
-            Apocalypse RPG
+            Apocalypse RPG <span class="fas fa-radiation-alt"></span>
         </a>
         
         <button class="navbar-toggler" type="button"
@@ -63,7 +63,7 @@
                             Faction 4
                         </a>
 
-                        <a class="dropdown-item" href="FrontPage.html#xipetotecPreview">
+                        <a class="dropdown-item" href="xipetotecMain.html">
                             Xipetotec
                         </a>
 
@@ -85,14 +85,14 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        Roadmap
+                        <span class="fas fa-map"></span> Roadmap
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <form class="container-fluid border border-success w-50">
+    <form class="container-fluid w-50">
         <div class="form-group">    
             <i class="fas fa-sign-in-alt"></i>
             
@@ -131,7 +131,7 @@
         </button>
     </form>
     
-   <div id="factionsSlideshow" class="border border-danger carousel slide"
+   <div id="factionsSlideshow" class="carousel slide"
     data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#factionsSlideshow" data-slide-to="0" class="active"></li>
